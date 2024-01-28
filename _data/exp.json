@@ -1,0 +1,55 @@
+[
+  {
+    "company": "MEDIA.NET (Directi)",
+    "company_location": "Remote",
+    "role": "Data Application Developer",
+    "time_duration": "October 2021 - Present",
+    "stack": "Scala, Java, SQL, Spark, Kafka, PySpark, Hdfs",
+    "details": [
+      {
+        "title": "Spark Submit Orchestrator Scripts",
+        "descriptions": ["Designed and implemented an efficient Bash script that orchestrates Spark submits and PySpark scripts, dynamically fetching configuration parameters from MySQL. This streamlined process centralizes and tracks settings used in Spark jobs, while also providing data for real-time performance monitoring, optimized scheduling, and resource allocation."],
+        "languages": "Bash Scala Java SQL PySpark"
+      },
+      {
+        "title": "DANTE (Data Anomaly Tracker)",
+        "descriptions": [
+          "Led the innovation of DANTE, a sophisticated system blended with Json-based configuration, offering developers effortless real-time data validation and trend analysis for voluminous datasets. Through architectural finesse and data compression, It emerges as our fastest analytical tool, ensuring precision at speed.",
+          "Conceptualized and built our first inaugural data quality tool, designed to operate with diverse statistical formulas. Enabled real-time tracking of data trend shifts and null value surges. This not only exposed anomalies in upstream data but also swiftly pinpointed internal system errors, fortifying data integrity and system reliability."
+        ],
+        "languages": "Scala, Spark, Hive, Graphana, Google Cloud Storage, Statistical Formulas"
+      },
+      {
+        "title": "StopLoss System",
+        "descriptions": [
+          "Integrating HBase into our streaming pipeline alongside Kafka as the data source led to a 30-minute reduction in data latency. This enables direct data flow and efficient handling and not only provided faster access to actionable insights but also established a scalable foundation for future data growth and evolving business needs.",
+          "Implemented A/B testing in the Stoploss System, to gain insights into traffic patterns and loss threshold for individual entities. This initiative led to a remarkable 15% reduction in overall losses, significantly contributing to the company's research and development efforts and generating tangible improvements in profitability.",
+          "Introduced Flock Alerting Scripts in the stop loss system with PySpark for efficient debugging. These scheduled scripts provide advanced error detection capabilities, enabling the identification of losses. This streamlined approach enhances error resolution speed and system reliability, leading to improved operational efficiency."
+        ],
+        "languages": "HBase, Kafka, PySpark"
+      }
+    ]
+  },
+  {
+    "company": "DEVSNEST",
+    "company_location": "Remote",
+    "role": "Backend Engineer",
+    "time_duration": "October 2020 - October 2021",
+    "stack": "Ruby on Rails, Python, Redis, Amazon SQS",
+    "details": [
+      {
+        "title": "Discord Automation and Notification System",
+        "descriptions": [
+            "Pioneered automation of group creation and moderation on Discord through the main website using Amazon Simple Queue Service, unlocking the peer-learning aspect of the product. Resulted in reduced management costs for cohorts and significantly increased community engagement during the COVID era.",
+            "Developed robust Discord notification system using the Round Robin method, for effectively managing and circumventing Discord's rate limit of 5 messages per second, resulting in increased user interaction and retention ensuring efficient communication with the user and promoting community engagement."
+            ],
+        "languages": "Ruby on Rails, Python, Amazon SQS"
+      },
+      {
+        "title": "Customized DSA Editor with Judge0 API",
+        "descriptions":[ "Customized DSA Editor using Judge0 API for real-time code execution and evaluation. Standardized, a backend editor with custom assertion testing to elevate student's proficiency in Backend. Utilized Git for version controlling of the user code, enabling students to track and manage code changes effectively."],
+        "languages": "Ruby on Rails, Python, Judge0 API, Git"
+      }
+    ]
+  }
+]

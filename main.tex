@@ -1,0 +1,79 @@
+% Resume in LuaLatex
+% Author: Adhikram Maitra
+% (Works with Overleaf)
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
+
+\usepackage{enumitem}
+\usepackage{fontawesome}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\LARGE Adhikram Maitra} \\
+    \vspace{2pt}
+    \faEnvelopeSquare \hspace{2pt} \href{mailto:your@email.com}{your@email.com} \hspace{10pt}
+    \faLinkedinSquare \hspace{2pt} \href{https://www.linkedin.com/in/yourlinkedin/}{linkedin.com/in/yourlinkedin/} \hspace{10pt}
+    \faGithubSquare \hspace{2pt} \href{https://github.com/yourgithub}{github.com/yourgithub} \\
+    \faDownload \hspace{2pt} \href{Adhikram_Maitra_Resume.pdf}{Download Resume} \\
+\end{center}
+
+\section*{Experience}
+
+\begin{itemize}[label=\textbullet]
+    \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{Company Name} & Location \\
+            \textit{\small\textcolor{gray}{Role $\cdot$ Stack}} & \textit{\small\textcolor{gray}{Date Range}} \\
+        \end{tabular*}\vspace{-5pt}
+        \begin{itemize}[label=$\circ$]
+            \item Project Title: Description of the project. Additional details if needed.
+        \end{itemize}
+    % Repeat for other experiences
+\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}[label=\textbullet]
+    \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{University Name} & Location \\
+            \textit{\small\textcolor{gray}{Degree}} & \textit{\small\textcolor{gray}{Date Range}} \\
+        \end{tabular*}\vspace{-5pt}
+    % Repeat for other education entries
+\end{itemize}
+
+\section*{Projects}
+
+\begin{itemize}[label=\textbullet]
+    \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{Project Title} & Date Range \\
+        \end{tabular*}\vspace{-5pt}
+        \begin{itemize}[label=$\circ$]
+            \item Description of the project. Additional details if needed.
+        \end{itemize}
+    % Repeat for other projects
+\end{itemize}
+
+\section*{Technical Skills}
+
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Languages:} Python, JavaScript, etc.
+    \item \textbf{Technologies:} React, Node.js, etc.
+    % Add more skills as needed
+\end{itemize}
+
+\section*{Links}
+
+\begin{itemize}[label=$\circ$]
+    \item \faGithub \hspace{2pt} \href{https://github.com/Adhikram/adhikram.github.io}{github.com/Adhikram/adhikram.github.io}
+    \item \faDownload \hspace{2pt} \href{Adhikram_Maitra_Resume.pdf}{Download Resume}
+\end{itemize}
+
+\end{document}

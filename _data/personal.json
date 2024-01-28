@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Adhikram Maitra",
+        "website": "https://github.com/Adhikram/adhikram.github.io",
+        "email": "adhikrammaitra@gmail.com",
+        "phone": "+91 9836965075",
+        "linkedin":"https://www.linkedin.com/in/adhikram-maitra/",
+        "github":"https://github.com/Adhikram",
+        "skills":[
+            {
+                "title": "Languages",
+                "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
+            },
+            {
+                "title": "Frameworks & Tools",
+                "details": "Spark, HDFS, Ruby on Rails, Kafka, Git, Amazon Simple Queue Service"
+            },
+            {
+                "title": "Fundamentals",
+                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL"
+            }
+        ]
+    }
+]

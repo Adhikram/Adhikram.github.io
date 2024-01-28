@@ -1,1 +1,165 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><meta name="theme-color" content="#000000"/><link rel="manifest" href="/manifest.json"/><link rel="shortcut icon" href="/favicon.ico"/><title>Adhikram Maitra</title><link href="/static/css/1.f380cd16.chunk.css" rel="stylesheet"><link href="/static/css/main.51bb2005.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={2:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/1.8311cb0c.chunk.js"></script><script src="/static/js/main.26d4ae13.chunk.js"></script></body></html>
+---
+title: Adhikram Maitra
+---
+
+{% assign personalData = site.data.personal[0] %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!--link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" /-->
+
+  <title>{{ personalData.name }}</title>
+</head>
+
+<body>
+  <div class="columns" style="padding-top: 20px">
+    <div class="column is-8 is-offset-2">
+      <div class="level content is-marginless">
+        <p class="title is-2">{{ personalData.name }}</p>
+        <p class="subtitle is-5">
+          <a href="mailto:{{ personalData.email }}" class="icon"><i class="fa fa-envelope-square" aria-hidden="true"
+              style="color: #4169e1"></i></a>
+          <a href="{{ personalData.linkedin }}" class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"
+              style="color: #4169e1"></i></a>
+          <a href="{{ personalData.github }}" class="icon"><i class="fa fa-github-square" aria-hidden="true"
+              style="color: #4169e1"></i></a>
+          <a href="Adhikram_Maitra_Resume.pdf" class="icon" download><i class="fa fa-download" aria-hidden="true"
+              style="color: #4169e1"></i></a>
+        </p>
+      </div>
+
+      <div class="content">
+        <span class="heading">
+          <h3>Experience</h3>
+        </span>
+        {% for experience in site.data.exp %}
+        <div class="level is-marginless">
+          <p class="is-marginless">
+            {{ experience.company }}<br />
+            <span class="content is-marginless" style="
+                  font-size: 0.8rem;
+                  font-family: monospace;
+                  color: #4169e1;
+                ">{{ experience.role }} || Stack:- {{ experience.stack }}</span>
+          </p>
+          <p style="text-align: right; font-size: 0.8rem">
+            {{ experience.company_location }}<br /><span class="content is-marginless">{{ experience.time_duration
+              }}</span>
+          </p>
+        </div>
+        <ul style="margin-top: 0.2em; list-style-type: circle">
+          {% for detail in experience.details %}
+          <li class="content is-marginless" style="font-size: 0.8rem">
+            <span class="heading is-marginless">
+              {{ detail.title }}
+              <span style="
+                    margin-left: 5px;
+                    font-size: 10px;
+                    font-family: monospace;
+                    color: #4169e1;
+                  ">{{ detail.languages }}</span>
+            </span>
+            {{ detail.description }} {% if detail.descriptions %}
+            <ul style="margin-top: 0.2em; list-style-type: circle">
+              {% for description in detail.descriptions %}
+              <li class="content is-marginless" style="font-size: 0.8rem">
+                {{ description }}
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+
+      <div class="content">
+        <span class="heading">
+          <h3>Education</h3>
+        </span>
+        {% for schoolData in site.data.edu %}
+        <div class="level">
+          <p class="is-marginless">
+            {{ schoolData.school }}<br /><span class="content is-marginless" style="font-size: 0.8rem">{{
+              schoolData.degree }}</span>
+          </p>
+          <p style="text-align: right; font-size: 0.8rem">
+            {{ schoolData.school_location }}<br /><span class="content is-marginless">{{ schoolData.time_period
+              }}</span>
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="content">
+        <span class="heading">
+          <h3>Projects</h3>
+        </span>
+        {% for project in site.data.proj %}
+        <div class="level is-marginless">
+          <p class="heading is-marginless">
+            {{ project.title }}<span style="
+                  margin-left: 5px;
+                  font-size: 10px;
+                  font-family: monospace;
+                  color: #4169e1;
+                ">{{ project.languages }}</span>
+          </p>
+          <p style="text-align: right; font-size: 0.8rem">
+            {{ project.time_period }}
+          </p>
+        </div>
+        {% if project.repository %}
+        <p style="font-size: 0.8rem">
+          <a href="{{ project.repository }}" target="_blank" rel="noopener noreferrer"
+            style="color: #4169e1">Repository</a>
+        </p>
+        {% endif %} {% if project.site %}
+        <p style="font-size: 0.8rem">
+          <a href="{{ project.site }}" target="_blank" rel="noopener noreferrer" style="color: #4169e1">View Site</a>
+        </p>
+        {% endif %}
+        <ul style="margin-top: 0.2em; list-style-type: disc">
+          {% for description in project.descriptions %}
+          <li style="font-size: 0.8rem">{{ description }}</li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+
+      <div class="content">
+        <span class="heading">
+          <h3>Technical Skills</h3>
+        </span>
+
+        {% for skill in personalData.skills %}
+        <div class="skill-category">
+          <p class="heading is-marginless">{{ skill.title }}</p>
+          <p style="font-size: 0.8rem">{{ skill.details }}</p>
+        </div>
+        {% endfor %}
+      </div>
+
+      <footer class="footer" style="background: inherit">
+        <div class="content has-text-centered">
+          <p>
+            <a class="icon" href="https://github.com/Adhikram/adhikram.github.io">
+              <i class="fa fa-github" style="color: #4169e1"></i>
+            </a>
+            <a href="Adhikram_Maitra_Resume.pdf" class="icon" download>
+              <i class="fa fa-download" aria-hidden="true" style="color: #4169e1">
+              </i></a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
