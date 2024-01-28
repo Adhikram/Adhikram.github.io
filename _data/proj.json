@@ -6,7 +6,7 @@
             "Created an Online Exam system for Teachers to conduct Competitive Exams.",
             "Build the Backend from scratch on AWS, supported by a postgres database hosted on Vercel."
         ],
-        "languages": "AWS ,Ruby on Rails, Python",
+        "languages": "AWS ,Ruby on Rails",
         "repository": "https://github.com/Adhikram/fuzzy_tutor"
     },
     {

@@ -21,67 +21,91 @@ end
 
 function printExpItems(file)
   local json = getJsonFromFile(file)
-  for key, value in pairs(json) do
+  
+  for _, value in ipairs(json) do
+    tex.print("\\begin{small}")  -- Use \begin{footnotesize} if you want a smaller size
+    tex.print("\\resumeSubHeadingListStart")
     tex.print("\\resumeExpEntry")
     tex.print("{" .. value["company"] .. "}")
     tex.print("{" .. value["company_location"] .. "}")
     tex.print("{" .. value["role"] .. "}")
-    tex.print("{" .. value["team"] .. "}")
+    tex.print("{" .. value["stack"] .. "}")
     tex.print("{" .. value["time_duration"] .. "}")
 
     tex.print("\\resumeItemListStart")
-    for key, value in pairs(value["details"]) do
-      tex.print("\\resumeItem")
-      tex.print("{" .. value["title"] .. "}")
-      tex.print("{" .. value["description"] .. "}")
-      tex.print("{" .. value["languages"] .. "}")
+    for _, detail in ipairs(value["details"]) do
+      tex.print("\\item{" .. detail["title"] .. " \\hfill \\textit{" .. detail["languages"] .. "}}")
+
+      -- Print descriptions with sub-bullets
+      tex.print("\\begin{itemize}")
+      for _, description in ipairs(detail["descriptions"]) do
+        tex.print("\\item " .. description)
+      end
+      tex.print("\\end{itemize}")
     end
     tex.print("\\resumeItemListEnd")
+    tex.print("\\vspace{-10pt}")
+    tex.print("\\resumeSubHeadingListEnd")
+    tex.print("\\end{small}")  -- Use \end{footnotesize} if you want to revert to the original size
   end
 end
+
 
 function printProjItems(file)
   local json = getJsonFromFile(file)
-  for key, value in pairs(json) do
-    tex.print("\\resumeSubItem")
-    tex.print("{" .. value["title"] .. "}")
-    tex.print("{" .. value["description"] .. "}")
-    tex.print("{" .. value["languages"] .. "}")
-  end
+
+
+  for _, value in ipairs(json) do
+    tex.print("\\begin{small}")  -- Use \begin{footnotesize} if you want a smaller size
+    tex.print("\\resumeSubHeadingListStart")
+    tex.print("\\resumeProjectHeading")
+    tex.print("{" .. value["title"] .. " $|$ \\emph{  \\textbf {Stack:- } " .. value["languages"] .. " }}")
+    tex.print("{" .. value["time_period"] .. "}")
+
+    tex.print("\\begin{itemize}")
+    for _, description in ipairs(value["descriptions"]) do
+      tex.print("\\item " .. description)
+      tex.print("\\vspace{-5pt}")
+    end
+    tex.print("\\end{itemize}")
+
+    tex.print("\\vspace{-3pt}")  -- Adjust the space as needed
+    tex.print("\\resumeSubHeadingListEnd")
+    tex.print("\\end{small}")  -- Use \end{footnotesize} if you want to revert to the original size
+  end  
 end
+
+
+
+
 
 function printHeading(file)
-  local json = getJsonFromFile(file)
-  for key, value in pairs(json) do
-    tex.print("\\begin{tabular*}{\\textwidth}{l@{\\extracolsep{\\fill}}r}")
+  for _, value in ipairs(getJsonFromFile(file)) do
+    tex.print("\\begin{center}")
 
-    tex.print("\\textbf{\\href")
-    tex.print("{" .. value["website"] .. "/}")
-    tex.print("{\\Large " .. value["name"] .. "}}")
-    tex.print(" & Email: \\href")
-    tex.print("{mailto:" .. value["email"] .. "}")
-    tex.print("{" .. value["email"] .. "}\\\\")
-
-    tex.print("\\href")
-    tex.print("{" .. value["website"] .. "/}")
-    tex.print("{" .. value["website"] .. "}")
-    tex.print(" & Phone: " .. value["phone"] .. "\\\\")
-
-    tex.print("\\end{tabular*}")
+    tex.print("\\textbf{\\Huge \\scshape " .. value["name"] .. "}")
+    tex.print("\\href{" .. value["website"] .. "/}{\\textbf{\\small\\faLink}} \\\\")
+    tex.print( value["phone"] .." $|$ \\href{mailto:" .. value["email"] .. "}{\\faEnvelope} $|$ \\href{" .. value["linkedin"] .. "}{\\faLinkedin} $|$ \\href{" .. value["github"] .. "}{\\faGithub}")
+    
+    tex.print("\\end{center}")
+    tex.print("\\vspace{-25pt}")
   end
 end
 
-function printList(file, primary, secondary)
+
+
+
+function printSkills(file)
   local json = getJsonFromFile(file)
-  local first = true
-  for key, value in pairs(json) do
-    for key, value in pairs(value[primary]) do
-      if (first) then
-        tex.print(value[secondary])
-        first = false
-      else
-        tex.print(", " .. value[secondary])
-      end
-    end
+  local skills = json[1]["skills"]
+  
+  for _, skill in ipairs(skills) do
+    tex.print("\\textbf{" .. skill["title"] .. "} | \\emph{" .. skill["details"] .. "}\\\\")
   end
 end
+
+
+
+
+
+
