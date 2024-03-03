@@ -12,12 +12,13 @@
           "Optimized with parallel data reading that led to a 60-pct reduction in data (>100Gb) processing time, enabling developers real-time data validation and trend analysis for voluminous datasets.",
           "Conceptualized our first configurable data quality tool, designed to operate with diverse statistical formulas to track data trend shifts and null value surges, which fortified data integrity for systems."
         ],
-        "languages": "Scala, Spark, Hive"
+        "languages": "Stack:- Scala, Spark, Hive",
+        "scale": "Comparing between nearly 3 Billion Rows and 200 Million Rows in 30 minutes"
       },
       {
         "title": "Spark Submit Orchestrator",
         "descriptions": ["Developed a process that orchestrates Spark submissions and PySpark scripts, dynamically fetching configuration from MySQL. This centralizes and tracks configurations used in Spark jobs, while providing data for real-time performance monitoring."],
-        "languages": "Bash, SQL"
+        "languages": "Stack:- Bash, SQL"
       },
       {
         "title": "StopLoss System",
@@ -26,7 +27,8 @@
           "Implemented A/B testing to gain insights into traffic patterns which led to a remarkable 15-pct reduction in overall losses, contributing to the company's research and development for profitability.",
           "Introduced PySpark Alert Scripts for efficient debugging which provides advanced error detection capabilities, enabling enhanced error resolution speed and system reliability, leading to improved operational efficiency."
         ],
-        "languages": "Java, Structured Streaming, Batch Processing"
+        "languages": "Stack:-Java, Structured Streaming, Batch Processing",
+        "scale": "Fetching 50k records per second from Kafka and processing it in 5 minute bucket"
       }
     ]
   },

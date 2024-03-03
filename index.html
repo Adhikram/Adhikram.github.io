@@ -63,7 +63,11 @@ title: Adhikram Maitra
                     font-size: 10px;
                     font-family: monospace;
                     color: #4169e1;
-                  ">{{ detail.languages }}</span>
+                  ">{{ detail.languages }}
+                {% if detail.scale %}
+                || Scale: {{ detail.scale }}
+                {% endif %}
+              </span>
             </span>
             {{ detail.description }} {% if detail.descriptions %}
             <ul style="margin-top: 0.2em; list-style-type: circle">
