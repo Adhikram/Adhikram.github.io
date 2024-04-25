@@ -98,17 +98,17 @@
 % Load lua script
 %-------------------------------------------
 \begin{luacode}
-require("lua/parser.lua")
+require("./_lua/parser.lua")
 \end{luacode}
 
 % Print Heading
 %-------------------------------------------
-\directlua{printHeading("_data/personal.json")}
+\directlua{printHeading("./_data/personal.json")}
 
 % Print Experience
 %-------------------------------------------
 \section{Experience}
-\directlua{printExpItems("_data/exp.json")}
+\directlua{printExpItems("./_data/exp.json")}
 
 
 
@@ -116,17 +116,17 @@ require("lua/parser.lua")
 %-------------------------------------------
 \section{Education}
     \resumeSubHeadingListStart
-    \directlua{printEduItems("_data/edu.json")}
+    \directlua{printEduItems("./_data/edu.json")}
     \resumeSubHeadingListEnd
 
 % Print Projects
 %-------------------------------------------
 \section{Projects}
-\directlua{printProjItems("_data/proj.json")}
+\directlua{printProjItems("./_data/proj.json")}
 
 % Print Skills
 %-------------------------------------------
 \section{Technical Skills}
-\directlua{printSkills("_data/personal.json")}
+\directlua{printSkills("./_data/personal.json")}
 
 \end{document}

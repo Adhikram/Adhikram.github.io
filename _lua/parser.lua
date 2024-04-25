@@ -3,7 +3,7 @@ require("lualibs.lua")
 function getJsonFromFile(file)
   local fileHandle = io.open(file)
   local jsonString = fileHandle:read('*a')
-  fileHandle.close()
+  fileHandle:close()  -- Use ':' instead of '.'
   local jsonData = utilities.json.tolua(jsonString)
   return jsonData
 end
@@ -36,6 +36,10 @@ function printExpItems(file)
     for _, detail in ipairs(value["details"]) do
       tex.print("\\item{" .. detail["title"] .. " \\hfill \\textit{" .. detail["languages"] .. "}}")
 
+      -- Check if "scale" field exists before concatenating
+      if detail["scale"] then
+        tex.print("\\newline \\textbf{ Scale:- }  " .. detail["scale"] .. " \\hfill")
+      end
       -- Print descriptions with sub-bullets
       tex.print("\\begin{itemize}")
       for _, description in ipairs(detail["descriptions"]) do
@@ -44,7 +48,7 @@ function printExpItems(file)
       tex.print("\\end{itemize}")
     end
     tex.print("\\resumeItemListEnd")
-    tex.print("\\vspace{-10pt}")
+    tex.print("\\vspace{-1pt}")
     tex.print("\\resumeSubHeadingListEnd")
     tex.print("\\end{small}")  -- Use \end{footnotesize} if you want to revert to the original size
   end

@@ -4,8 +4,16 @@
     "company_location": "Remote, India",
     "role": "Data Application Developer",
     "time_duration": "October 2021 - Present",
-    "stack": "Scala, Java, SQL, Spark, Kafka, PySpark, Hdfs",
+    "stack": "Stack:- Scala, Java, SQL, Spark, Kafka, PySpark, Hdfs, Ruby",
     "details": [
+      {
+        "title": "Parameter Mismatch",
+        "descriptions": [
+          "Crafted an advanced tool for ensuring data reliability. This innovative solution swiftly identifies logging discrepancies, empowering seamless data validation and fortifying the reliability of downstream datasets."
+        ],
+        "languages": "Stack:- Scala, Spark, Hive",
+        "scale": "Comparing between nearly 100Gb Data in 30 minutes"
+      },
       {
         "title": "DANTE (Data Anomaly Tracker)",
         "descriptions": [
@@ -24,10 +32,9 @@
         "title": "StopLoss System",
         "descriptions": [
           "Integrated HBase with Kafka Source which led to a 30-minute reduction in data latency and efficient error handling with faster access to actionable insights, establishing scalable foundation.",
-          "Implemented A/B testing to gain insights into traffic patterns which led to a remarkable 15-pct reduction in overall losses, contributing to the company's research and development for profitability.",
-          "Introduced PySpark Alert Scripts for efficient debugging which provides advanced error detection capabilities, enabling enhanced error resolution speed and system reliability, leading to improved operational efficiency."
+          "Implemented A/B testing to gain insights into traffic patterns which led to a remarkable 15-pct reduction in overall losses, contributing to the company's research and development for profitability."
         ],
-        "languages": "Stack:-Java, Structured Streaming, Batch Processing",
+        "languages": "Stack:- Java, Structured Streaming, Batch Processing",
         "scale": "Fetching 50k records per second from Kafka and processing it in 5 minute bucket"
       }
     ]
@@ -37,20 +44,21 @@
     "company_location": "Remote, India",
     "role": "Backend Engineer",
     "time_duration": "October 2020 - October 2021",
-    "stack": "Ruby on Rails, Python, Redis, Amazon SQS",
+    "stack": "Stack:- Ruby on Rails, Python, Redis, Amazon SQS",
     "details": [
       {
         "title": "Discord Automation and Notification System",
         "descriptions": [
-            "Pioneered automation for group moderation on Discord through website using Amazon SQS, unlocking the peer-learning aspect of the product. Resulted in reduced management costs with increased community engagement.",
+            "Pioneered automation for group moderation on Discord through website, unlocking the peer-learning aspect of the product. Resulted in reduced management costs with increased community engagement.",
             "Developed robust Discord Notification System using the Round Robin method, for effectively circumventing Discord's rate limit of 5 messages per second, resulting in increased user interaction and retention."
             ],
-        "languages": "Ruby on Rails, Python, Amazon SQS"
+        "languages": "Stack:- Ruby on Rails, Python, Amazon SQS",
+        "scale": "Sending 2k messages per day. Reaching 10k Users in 3 months"
       },
       {
         "title": "Customized Editors",
         "descriptions":[ "Customized DSA Editor using Judge0 API for real-time code execution and evaluation. Standardized, a backend editor with custom assertion testing to elevate student's proficiency in Backend."],
-        "languages": "Judge0 API"
+        "languages": "Stack:- Ruby, React, Judge0 API"
       }
     ]
   }
