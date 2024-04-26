@@ -83,25 +83,24 @@ end
 
 
 
-function printHeading(file)
-  for _, value in ipairs(getJsonFromFile(file)) do
-    tex.print("\\begin{center}")
-
-    tex.print("\\textbf{\\Huge \\scshape " .. value["name"] .. "}")
-    tex.print("\\href{" .. value["website"] .. "/}{\\textbf{\\small\\faLink}} \\\\")
-    tex.print( value["phone"] .." $|$ \\href{mailto:" .. value["email"] .. "}{\\faEnvelope} $|$ \\href{" .. value["linkedin"] .. "}{\\faLinkedin} $|$ \\href{" .. value["github"] .. "}{\\faGithub}")
-    
-    tex.print("\\end{center}")
-    tex.print("\\vspace{-25pt}")
-  end
+function printHeading(file, index)
+  
+  local json = getJsonFromFile(file)
+  local value = json[index]
+  tex.print("\\begin{center}")
+  tex.print("\\textbf{\\Huge \\scshape " .. value["name"] .. "}")
+  tex.print("\\href{" .. value["website"] .. "/}{\\textbf{\\small\\faLink}} \\\\")
+  tex.print( value["phone"] .." $|$ \\href{mailto:" .. value["email"] .. "}{".. value["email"] .."} $|$ \\href{" .. value["linkedin"] .. "}{\\faLinkedin} $|$ \\href{" .. value["github"] .. "}{\\faGithub}")
+  tex.print("\\end{center}")
+  tex.print("\\vspace{-25pt}")
 end
 
 
 
 
-function printSkills(file)
+function printSkills(file, index)
   local json = getJsonFromFile(file)
-  local skills = json[1]["skills"]
+  local skills = json[index]["skills"]
   
   for _, skill in ipairs(skills) do
     tex.print("\\textbf{" .. skill["title"] .. "} | \\emph{" .. skill["details"] .. "}\\\\")
