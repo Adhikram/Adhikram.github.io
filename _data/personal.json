@@ -25,7 +25,7 @@
     {
         "name": "Adhikram Maitra",
         "website": "https://portfolio.wolfcreek.dev/jobs",
-        "email": "adhikrammaitrajobs@gmail.com",
+        "email": "adhikramjobs@gmail.com",
         "phone": "+91 9836965075",
         "linkedin":"https://www.linkedin.com/in/adhikram-maitra/",
         "github":"https://github.com/Adhikram",
@@ -47,7 +47,7 @@
     },{
         "name": "Adhikram Maitra",
         "website": "https://portfolio.wolfcreek.dev/refs",
-        "email": "adhikrammaitrareferrals@gmail.com",
+        "email": "adhikramjobreferrals@gmail.com",
         "phone": "+91 9836965075",
         "linkedin":"https://www.linkedin.com/in/adhikram-maitra/",
         "github":"https://github.com/Adhikram",
@@ -77,7 +77,7 @@
         "skills":[
             {
                 "title": "Languages",
-                "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
+                "details": "Scala, Java, Python, SQL (MySQL), Ruby"
             },
             {
                 "title": "Frameworks and Tools",
