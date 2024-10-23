@@ -4,36 +4,32 @@
     "company_location": "Remote, India",
     "role": "Data Application Developer 2",
     "time_duration": "October 2021 - Present",
-    "stack": "Stack:- Scala, Java, SQL, Spark, Kafka, PySpark, Hdfs, Ruby",
+    "stack": "Stack:- Scala, Java, SQL, Spark, Kafka, PySpark, Hdfs",
     "details": [
-      {
-        "title": "Parameter Mismatch",
-        "descriptions": [
-          "Crafted an advanced tool for ensuring data reliability. This innovative solution swiftly identifies logging discrepancies, empowering seamless data validation and fortifying the reliability of downstream datasets."
-        ],
-        "languages": "Stack:- Scala, Spark, Hive",
-        "scale": "Comparing between nearly 100Gb Data in 30 minutes"
-      },
       {
         "title": "DANTE (Data Anomaly Tracker)",
         "descriptions": [
-          "Optimized with parallel data reading that led to a 60-pct reduction in data (>100Gb) processing time, enabling developers real-time data validation and trend analysis for voluminous datasets.",
-          "Conceptualized our first configurable data quality tool, designed to operate with diverse statistical formulas to track data trend shifts and null value surges, which fortified data integrity for systems."
+          "Conceptualized our first configurable data quality tools which fortified data integrity for pipelines.",
+          "Optimized parallel data reading, leading to a 60-pct reduction in data (>100GB) processing time, enabling developers to perform real-time data validation and trend analysis for voluminous datasets.",
+          "EQ Tracer: A tool to monitor summative metric trends across configurable hierarchies with dynamic alerting mechanisms to filter out noise data, ensuring accurate insights.",
+          "Ratio Tracer: A tool for outlier detection using customizable percentile thresholds, enabling the proactive identification and mitigation of anomalies.",
+          "PM Tracer: A logging and monitoring tool that aggregates data from multiple sources, providing detailed coverage and mismatch analysis for enhanced data quality and system reliability."
+
         ],
         "languages": "Stack:- Scala, Spark, Hive",
-        "scale": "Comparing between nearly 3 Billion Rows and 200 Million Rows in 30 minutes"
+        "scale": "Comparing between nearly 3 Billion and 200 Million Rows in 30 minutes"
       },
       {
         "title": "Spark Submit Orchestrator",
-        "descriptions": ["Developed a process that orchestrates Spark submissions and PySpark scripts, dynamically fetching configuration from MySQL. This centralizes and tracks configurations used in Spark jobs, while providing data for real-time performance monitoring."],
+        "descriptions": ["Developed an orchestrator for Spark submissions and PySpark scripts, dynamically fetching configuration from MySQL. This centralizes and tracks job configurations, while providing data for performance monitoring."],
         "languages": "Stack:- Bash, SQL"
       },
       {
         "title": "StopLoss System",
         "descriptions": [
-          "Integrated HBase with Kafka Source which led to a 30-minute reduction in data latency and efficient error handling with faster access to actionable insights, establishing scalable foundation.",
-          "Implemented A/B testing to gain insights into traffic patterns which led to a remarkable 15-pct reduction in overall losses, contributing to the company's research and development for profitability."
-        ],
+          "Shifted Spark Streaming to Structured Streaming, leading to a 50-pct reduction in latency and improved error handling, which also added exactly-once assurance that terminated the data audit pipeline.",
+          "Implemented A/B testing to gain insights into traffic patterns and loss thresholds for individual entities. This initiative led to a remarkable reduction (15-pct) in overall losses, significantly contributing to the company’s research and development efforts and generating tangible improvements in profitability."
+         ],
         "languages": "Stack:- Java, Structured Streaming, Batch Processing",
         "scale": "Fetching 50k records per second from Kafka and processing it in 5 minute bucket"
       }
@@ -50,15 +46,10 @@
         "title": "Discord Automation and Notification System",
         "descriptions": [
             "Pioneered automation for group moderation on Discord through website, unlocking the peer-learning aspect of the product. Resulted in reduced management costs with increased community engagement.",
-            "Developed robust Discord Notification System using the Round Robin method, for effectively circumventing Discord's rate limit of 5 messages per second, resulting in increased user interaction and retention."
+            "Developed an orchestrator for Spark submissions and PySpark scripts, dynamically fetching configurations from MySQL. This centralizes and tracks job configurations while providing data for performance monitoring."
             ],
         "languages": "Stack:- Ruby on Rails, Python, Amazon SQS",
         "scale": "Sending 2k messages per day. Reaching 10k Users in 3 months"
-      },
-      {
-        "title": "Customized Editors",
-        "descriptions":[ "Customized DSA Editor using Judge0 API for real-time code execution and evaluation. Standardized, a backend editor with custom assertion testing to elevate student's proficiency in Backend."],
-        "languages": "Stack:- Ruby, React, Judge0 API"
       }
     ]
   }

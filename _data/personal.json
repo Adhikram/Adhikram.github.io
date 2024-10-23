@@ -1,26 +1,30 @@
 [
     {
         "name": "Adhikram Maitra",
-        "website": "https://portfolio.wolfcreek.dev/",
+        "website": "https://portfolio.wolfcreek.dev",
         "email": "adhikrammaitra@gmail.com",
         "phone": "+91 9836965075",
         "linkedin":"https://www.linkedin.com/in/adhikram-maitra/",
         "github":"https://github.com/Adhikram",
         "resume":"Adhikram_Maitra_Resume.pdf",
         "skills":[
-            {
-                "title": "Languages",
-                "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
-            },
-            {
-                "title": "Frameworks and Tools",
-                "details": "Spark, HDFS, Ruby on Rails, Kafka, Git, Amazon Simple Queue Service"
-            },
-            {
-                "title": "Fundamentals",
-                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL"
-            }
-        ]
+                    {
+                        "title": "Languages",
+                        "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
+                    },
+                    {
+                        "title": "Tools",
+                        "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS"
+                    },
+                    {
+                        "title": "Fundamentals",
+                        "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+                    },
+                    {
+                        "title": "Data Stack",
+                        "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+                    }
+                ]
     },
     {
         "name": "Adhikram Maitra",
@@ -31,19 +35,23 @@
         "github":"https://github.com/Adhikram",
         "resume":"Adhikram_Maitra_Jobs_Resume.pdf",
         "skills":[
-            {
-                "title": "Languages",
-                "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
-            },
-            {
-                "title": "Frameworks and Tools",
-                "details": "Spark, HDFS, Ruby on Rails, Kafka, Git, Amazon Simple Queue Service"
-            },
-            {
-                "title": "Fundamentals",
-                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL"
-            }
-        ]
+                    {
+                        "title": "Languages",
+                        "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
+                    },
+                    {
+                        "title": "Tools",
+                        "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS"
+                    },
+                    {
+                        "title": "Fundamentals",
+                        "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+                    },
+                    {
+                        "title": "Data Stack",
+                        "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+                    }
+                ]
     },{
         "name": "Adhikram Maitra",
         "website": "https://portfolio.wolfcreek.dev/refs",
@@ -53,19 +61,23 @@
         "github":"https://github.com/Adhikram",
         "resume":"Adhikram_Maitra_Referrals_Resume.pdf",
         "skills":[
-            {
-                "title": "Languages",
-                "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
-            },
-            {
-                "title": "Frameworks and Tools",
-                "details": "Spark, HDFS, Ruby on Rails, Kafka, Git, Amazon Simple Queue Service"
-            },
-            {
-                "title": "Fundamentals",
-                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL"
-            }
-        ]
+                    {
+                        "title": "Languages",
+                        "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
+                    },
+                    {
+                        "title": "Tools",
+                        "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS"
+                    },
+                    {
+                        "title": "Fundamentals",
+                        "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+                    },
+                    {
+                        "title": "Data Stack",
+                        "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+                    }
+                ]
     },{
         "name": "Adhikram Maitra",
         "website": "https://portfolio.wolfcreek.dev/masked",
@@ -77,15 +89,19 @@
         "skills":[
             {
                 "title": "Languages",
-                "details": "Scala, Java, Python, SQL (MySQL), Ruby"
+                "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
             },
             {
-                "title": "Frameworks and Tools",
-                "details": "Spark, HDFS, Ruby on Rails, Kafka, Git, Amazon Simple Queue Service"
+                "title": "Tools",
+                "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS"
             },
             {
                 "title": "Fundamentals",
-                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL"
+                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+            },
+            {
+                "title": "Data Stack",
+                "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
             }
         ]
     }

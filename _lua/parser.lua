@@ -44,6 +44,7 @@ function printExpItems(file)
       tex.print("\\begin{itemize}")
       for _, description in ipairs(detail["descriptions"]) do
         tex.print("\\item " .. description)
+        tex.print("\\vspace{2pt}")
       end
       tex.print("\\end{itemize}")
     end
@@ -54,16 +55,27 @@ function printExpItems(file)
   end
 end
 
-
 function printProjItems(file)
   local json = getJsonFromFile(file)
-
 
   for _, value in ipairs(json) do
     tex.print("\\begin{small}")  -- Use \begin{footnotesize} if you want a smaller size
     tex.print("\\resumeSubHeadingListStart")
     tex.print("\\resumeProjectHeading")
-    tex.print("{" .. value["title"] .. " $|$ \\emph{  \\textbf {Stack:- } " .. value["languages"] .. " }}")
+
+    -- Construct the project heading with the title first
+    local projectHeading = "{" .. value["title"]
+
+    -- Add optional site/repository link and icon after the title
+    if value["site"] then
+      projectHeading = projectHeading .. " $|$ \\href{" .. value["site"] .. "}{\\faGlobe}"
+    elseif value["repository"] then
+      projectHeading = projectHeading .. " $|$ \\href{" .. value["repository"] .. "}{\\faGithub}"
+    end
+
+    projectHeading = projectHeading .. " $|$ \\emph{  \\textbf {Stack:- } " .. value["languages"] .. " }}"
+
+    tex.print(projectHeading)
     tex.print("{" .. value["time_period"] .. "}")
 
     tex.print("\\begin{itemize}")
@@ -78,7 +90,6 @@ function printProjItems(file)
     tex.print("\\end{small}")  -- Use \end{footnotesize} if you want to revert to the original size
   end  
 end
-
 
 
 
